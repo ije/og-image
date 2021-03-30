@@ -12,5 +12,4 @@ export async function loadImage(url ) {
 
 export const createCanvas = Canvas.MakeCanvas
 
-export * from "./types.ts"
 export default Canvas
