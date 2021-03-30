@@ -1,4 +1,4 @@
-import { decode } from "./deps.ts";
+import { decode } from "https://deno.land/std/encoding/base64.ts";
 import { WASM_BASE64 } from "./wasm.js"
 let document = { getElementById: () => undefined };
 let wasmBuff = decode(WASM_BASE64);

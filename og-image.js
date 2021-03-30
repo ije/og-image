@@ -1,6 +1,6 @@
 import Canvas, { loadImage } from 'https://raw.githubusercontent.com/postui/og-image/main/deno-canvas/mod.ts'
 
-addEventListener('fetch', async (event: any) => {
+addEventListener('fetch', async (event) => {
     const canvasSize = [2048, 1170]
     const defaultHeight = 300
     const defaultFontSize = 90
