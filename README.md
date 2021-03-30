@@ -1,7 +1,7 @@
 # [Open Graph Image as a Service](https://og-image.vercel.app)
 
-<a href="https://twitter.com/vercel">
-    <img align="right" src="https://og-image.vercel.app/tweet.png" height="300" />
+<a href="https://deno.com">
+    <img align="right" src="./hello-deno-land.png" height="300" />
 </a>
 
 Serverless service that generates dynamic Open Graph images that you can embed in your `<meta>` tags.
@@ -26,4 +26,10 @@ It looks like the following:
   <title>Title</title>
   <meta property="og:image" content="http://example.com/logo.jpg" />
 </head>
+```
+
+## Local Service
+
+```bash
+deployctl run https://raw.githubusercontent.com/postui/og-image/main/og-image.js
 ```
