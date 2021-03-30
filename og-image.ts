@@ -1,4 +1,4 @@
-import Canvas, { loadImage } from 'https://deno.land/x/canvas@v1.1.1/mod.ts'
+import Canvas, { loadImage } from './deno-canvas@v1.1.1/mod.ts'
 
 addEventListener('fetch', async (event: any) => {
     const canvasSize = [2048, 1170]
@@ -29,8 +29,8 @@ addEventListener('fetch', async (event: any) => {
     const text = decodeURIComponent(url.pathname).slice(1)
     const imageSrc = url.searchParams.get('image') || url.searchParams.get('img') || 'https://deno.com/static/logo3.png'
 
-    let imageWidth = parseInt(url.searchParams.get('width'))
-    let imageHeight = parseInt(url.searchParams.get('height'))
+    let imageWidth = parseInt(url.searchParams.get('width') || '0')
+    let imageHeight = parseInt(url.searchParams.get('height') || '0')
     try {
         const img = await loadImage(imageSrc)
         const r = img.width() / img.height()
@@ -61,7 +61,7 @@ addEventListener('fetch', async (event: any) => {
     }
 
     if (text) {
-        const fontSize = parseInt(url.searchParams.get('font-size')) || defaultFontSize
+        const fontSize = parseInt(url.searchParams.get('font-size') || '' + defaultFontSize)
         ctx.font = `italic bold ${fontSize}px Helvetica`
         ctx.fillStyle = '#111111'
 
