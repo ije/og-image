@@ -1,7 +1,7 @@
-import { decode } from "https://deno.land/std/encoding/base64.ts";
+import { toUint8Array } from "https://esm.sh/js-base64?no-check";
 import { WASM_BASE64 } from "./wasm.js"
 let document = { getElementById: () => undefined };
-let wasmBuff = decode(WASM_BASE64);
+let wasmBuff = toUint8Array(WASM_BASE64);
 let wasmMod = new WebAssembly.Module(wasmBuff);
 
 let storeWasm;
