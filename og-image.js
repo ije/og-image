@@ -1,4 +1,4 @@
-import Canvas, { loadImage } from 'https://raw.githubusercontent.com/postui/og-image/main/deno-canvas/mod.ts'
+import Canvas, { loadImage } from 'https://raw.githubusercontent.com/postui/og-image/main/deno-canvas/mod.js'
 
 addEventListener('fetch', async (event) => {
     const canvasSize = [2048, 1170]
