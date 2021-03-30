@@ -1,4 +1,4 @@
-import Canvas, { loadImage } from './deno-canvas@v1.1.1/mod.ts'
+import Canvas, { loadImage } from './deno-canvas%40v1.1.1/mod.ts'
 
 addEventListener('fetch', async (event: any) => {
     const canvasSize = [2048, 1170]
@@ -50,6 +50,7 @@ addEventListener('fetch', async (event: any) => {
             imageHeight
         )
     } catch (e) {
+        console.log(e)
         event.respondWith(new Response(
             `invalid image: ${imageSrc}`,
             {
