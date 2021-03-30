@@ -1,4 +1,4 @@
-import Canvas, { loadImage } from './deno-canvas-3/mod.js'
+import Canvas, { loadImage } from './deno-canvas/mod.js'
 
 addEventListener('fetch', async (event) => {
     const canvasSize = [2048, 1170]
