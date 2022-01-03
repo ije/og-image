@@ -1,6 +1,6 @@
 # [Open Graph Image as a Service](https://og-image.deno.dev)
 
-<a href="https://deno.com">
+<a href="https://deno.com/deploy">
     <img align="right" src="./hello-deno-land.png" height="300" />
 </a>
 
