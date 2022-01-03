@@ -1,4 +1,4 @@
-# [Open Graph Image as a Service](https://og-image.vercel.app)
+# [Open Graph Image as a Service](https://og-image.deno.dev)
 
 <a href="https://deno.com">
     <img align="right" src="./hello-deno-land.png" height="300" />
